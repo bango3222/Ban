@@ -340,11 +340,37 @@ body {
 
 .btn__quantity {
   background: #FFFFFF;
-  /* New Color */
   border: 2px solid #FCD51E;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 17.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn__quantity input::-webkit-outer-spin-button,
+.btn__quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn__quantity input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.btn__quantity input {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn__quantity input:focus {
+  outline: none;
 }
 
 .btn__knopka {
@@ -384,7 +410,7 @@ body {
 .pohta {
   background: url("../img/Group 67.png");
   width: 100%;
-  padding: 189px 430px 296px 430px;
+  padding: 189px 0 296px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -394,12 +420,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 72px;
-  text-align: center;
 }
 
 .pohta__text {
@@ -413,7 +441,41 @@ body {
 }
 
 .pohta__input {
-  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.pohta__input .input__mail {
+  width: 100%;
+  border: 2px solid #FCD51E;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22.5px;
+  padding: 12px 120px 12px 30px;
+  height: 45px;
+}
+
+.pohta__input .input__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px;
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+  background: #FCD51E;
+  border-radius: 22.5px;
+  height: 45px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .text__title {
@@ -454,10 +516,15 @@ body {
 }
 
 .carta__dostavka {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 49px;
 }
 

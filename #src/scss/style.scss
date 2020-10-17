@@ -23,7 +23,7 @@
             max-width: 100%;
             max-height: 100%;
         }
-        
+
         .brend__vobla{
              display: none;
         }
@@ -39,7 +39,7 @@
             display: none;
         }
     }
-    
+
     @media (max-width:992px){
             max-width: 750px;
             .brend__logo{
@@ -88,17 +88,17 @@
             .phone__icon{
                 margin-right: 3px;
             }
-        
+
     }
-    
+
     @media (max-width:767px){
         .brend__logo{
              width: 65px;
             height: 40px;
         }
-        
+
             max-width: none;
-        
+
     }
 }
 
@@ -147,7 +147,7 @@ body{
         &__link:hover{
             border-bottom: 2px solid #FCD51E;
         }
-        
+
         &__icon{
             margin-top: 65px;
             display: flex
@@ -158,9 +158,9 @@ body{
 
 }
 .brend {
-    
-    
-		&__column { 
+
+
+		&__column {
             justify-content: center;
 		}
 
@@ -184,7 +184,7 @@ body{
          &__mobail{
              display: flex;
              justify-content: space-between;
-             align-items: center;       
+             align-items: center;
         }
         &__phone p{
             margin-left: 9px;
@@ -371,11 +371,33 @@ body{
 
 		&__quantity {
             background: #FFFFFF;
-            /* New Color */
-
             border: 2px solid #FCD51E;
             box-sizing: border-box;
             border-radius: 17.5px;
+            display: flex;
+            align-items: center;
+
+
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+            input[type=number] {
+              -moz-appearance: textfield;
+            }
+
+            input{
+                background: none;
+                border: none;
+                cursor: pointer;
+                text-align: center;
+
+                &:focus{
+                  outline: none;
+                }
+            }
 		}
 
 		&__knopka {
@@ -407,7 +429,7 @@ body{
         letter-spacing: 0.1em;
         color: #000000;
         width: 30px;
-        
+
     }
     &__btnplas{
     }
@@ -422,15 +444,16 @@ body{
 .pohta {
     background: url("../img/Group 67.png");
     width: 100%;
-    padding: 189px 430px 296px 430px;
+    padding: 189px 0 296px 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin-bottom: 72px;
-    text-align: center;
+
     &__text {
         margin-top: 40px;
         display: flex;
@@ -438,16 +461,38 @@ body{
     }
 
     &__input {
-        text-align: center;
-    }
-}
-.input {
-    &__mail{
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      .input__mail{
+        width: 100%;
+        border: 2px solid #FCD51E;
+        box-sizing: border-box;
+        border-radius: 22.5px; ;
+        padding: 12px 120px 12px 30px;
+        height: 45px;
+      }
+      .input__btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px;
+        font-family: Comfortaa;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        color: #000000;
+        background: #FCD51E ;
+        border-radius: 22.5px; ;
+        height: 45px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
 
-    }
-    &__btn {
+      }
     }
 }
+
 .text{
     &__title{
         width: 570px;
@@ -472,15 +517,16 @@ body{
         font-weight: bold;
         font-size: 28px;
         line-height: 35px;
-        letter-spacing: 0.1em;  
+        letter-spacing: 0.1em;
         color: #FCD51E;
         text-align: center;
         margin-bottom: 91px;
     }
 
     &__dostavka {
-        text-align: center;
+        display: flex;
         align-items: center;
+        justify-content: center;
         margin-bottom: 49px;
     }
 
@@ -567,7 +613,7 @@ body{
         letter-spacing: 0.1em;
     }
 
-    &__number { 
+    &__number {
         display: flex;
         align-items: center;
         float: right;
