@@ -391,6 +391,14 @@ body {
   border-radius: 40px;
 }
 
+.quantity__btnmin {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .quantity__pole {
   font-family: Comfortaa;
   font-weight: bold;
@@ -400,6 +408,14 @@ body {
   letter-spacing: 0.1em;
   color: #000000;
   width: 30px;
+}
+
+.quantity__btnplas {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .lineweih {
