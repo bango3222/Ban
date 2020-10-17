@@ -349,6 +349,7 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            border-right: none;
 		}
 }
 .price {
@@ -530,7 +531,8 @@ body{
         margin-bottom: 49px;
     }
 
-    &__map {
+    &__map img{
+        width: 100%;
     }
 }
 .dostavka {

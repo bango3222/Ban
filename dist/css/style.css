@@ -324,6 +324,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-right: none;
 }
 
 .price__newprice {
@@ -526,6 +527,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 49px;
+}
+
+.carta__map img {
+  width: 100%;
 }
 
 .dostavka__item {
