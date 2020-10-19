@@ -88,7 +88,14 @@
             .phone__icon{
                 margin-right: 3px;
             }
-
+            
+            .kartohki__row{
+                grid-template-columns: 1fr 1fr ;
+                margin-bottom: 20px;
+            }
+            .lineweih{
+                display: none;
+            }
     }
 
     @media (max-width:767px){
@@ -98,7 +105,10 @@
         }
 
             max-width: none;
-
+            .kartohki__row{
+                grid-template-columns: 1fr;
+            }
+    
     }
 }
 
@@ -205,6 +215,20 @@ body{
     display: flex;
     flex-direction: column;
     margin-bottom: 72px;
+
+    @media (max-width:992px){
+        // max-width: 750px;
+        width: 100%;
+        padding: 40px 15px 200px 15px;
+        .banner__text{
+            font-size: 36px;
+            margin-bottom: 100px;
+            width: 100%;
+        }
+        .banner__btn{
+            font-size: 16px; 
+        }
+    }
 }
 
 .banner__text{
@@ -265,7 +289,12 @@ body{
             color: #FCD51E;
             text-align: center;
             padding-bottom: 97px;
-		}
+        }
+        &__title {
+            @media (max-width:767px){
+                font-size: 19px;
+        }
+        }
 
 		&__row {
             display: grid;
@@ -374,7 +403,7 @@ body{
             background: #FFFFFF;
             border: 2px solid #FCD51E;
             box-sizing: border-box;
-            border-radius: 17.5px;
+            border-radius: 20.5px;
             display: flex;
             align-items: center;
 
@@ -414,7 +443,13 @@ body{
             padding: 7px 24px 7px 24px;
             background: #FCD51E;
             border-radius: 40px;
-		}
+            border: 2px solid transparent;
+            transition: all .5s;
+        }
+        &__knopka:hover{
+            background: #FFFFFF;
+            border: 2px solid #FCD51E;
+        }
 }
 
 .quantity{
@@ -464,17 +499,23 @@ body{
     align-items: center;
     flex-direction: column;
     margin-bottom: 72px;
-
+    
     &__text {
         margin-top: 40px;
         display: flex;
         justify-content: center;
+        @media (max-width:767px){
+            padding: 0 15px;
+        }
     }
 
     &__input {
       position: relative;
       width: 100%;
       max-width: 500px;
+      @media (max-width:767px){
+        padding: 0 15px;
+    }
       .input__mail{
         width: 100%;
         border: 2px solid #FCD51E;
@@ -482,6 +523,9 @@ body{
         border-radius: 22.5px; ;
         padding: 12px 120px 12px 30px;
         height: 45px;
+        &:focus{
+            outline: none;
+          }
       }
       .input__btn{
         position: absolute;
@@ -499,8 +543,16 @@ body{
         text-decoration: none;
         display: flex;
         align-items: center;
-
-      }
+        border: 2px solid transparent;
+        transition: all .5s;
+        @media (max-width:767px){
+            margin-right: 15px;
+        }
+      }  
+      .input__btn:hover{
+        background: #FFFFFF;
+        border: 2px solid #FCD51E;
+    }
     }
 }
 
@@ -515,6 +567,10 @@ body{
         letter-spacing: 0.1em;
         color: #151511;
         margin-bottom: 72px;
+        @media (max-width:767px){
+            font-size: 19px;
+            width: 100%;
+        }
     }
 }
 
@@ -534,11 +590,22 @@ body{
         margin-bottom: 91px;
     }
 
+    &__title {
+        @media (max-width:767px){
+            font-size: 19px;
+    }
+    }
+
     &__dostavka {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 49px;
+    }
+    &__dostavka {
+        @media (max-width:767px){
+            flex-wrap: wrap;
+    }
     }
 
     &__map img{
@@ -549,7 +616,14 @@ body{
 
     &__item {
         margin-right: 42px;
-        align-items: center;
+    }
+
+    &__item {
+        @media (max-width:767px){
+            max-width: 30%;
+            padding-bottom: 10px;
+            margin-right: 10px;
+    }
     }
 }
 

@@ -344,7 +344,7 @@ body {
   border: 2px solid #FCD51E;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 17.5px;
+  border-radius: 20.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,6 +389,15 @@ body {
   padding: 7px 24px 7px 24px;
   background: #FCD51E;
   border-radius: 40px;
+  border: 2px solid transparent;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.btn__knopka:hover {
+  background: #FFFFFF;
+  border: 2px solid #FCD51E;
 }
 
 .quantity__btnmin {
@@ -473,6 +482,10 @@ body {
   height: 45px;
 }
 
+.pohta__input .input__mail:focus {
+  outline: none;
+}
+
 .pohta__input .input__btn {
   position: absolute;
   right: 0;
@@ -493,6 +506,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 2px solid transparent;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.pohta__input .input__btn:hover {
+  background: #FFFFFF;
+  border: 2px solid #FCD51E;
 }
 
 .text__title {
@@ -551,9 +573,6 @@ body {
 
 .dostavka__item {
   margin-right: 42px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .lastmarg {
@@ -795,6 +814,30 @@ body {
   .container .phone__icon {
     margin-right: 3px;
   }
+
+  .container .kartohki__row {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+  }
+
+  .container .lineweih {
+    display: none;
+  }
+
+  .banner {
+    width: 100%;
+    padding: 40px 15px 200px 15px;
+  }
+
+  .banner .banner__text {
+    font-size: 36px;
+    margin-bottom: 100px;
+    width: 100%;
+  }
+
+  .banner .banner__btn {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -805,5 +848,45 @@ body {
   .container .brend__logo {
     width: 65px;
     height: 40px;
+  }
+
+  .container .kartohki__row {
+    grid-template-columns: 1fr;
+  }
+
+  .kartohki__title {
+    font-size: 19px;
+  }
+
+  .pohta__text {
+    padding: 0 15px;
+  }
+
+  .pohta__input {
+    padding: 0 15px;
+  }
+
+  .pohta__input .input__btn {
+    margin-right: 15px;
+  }
+
+  .text__title {
+    font-size: 19px;
+    width: 100%;
+  }
+
+  .carta__title {
+    font-size: 19px;
+  }
+
+  .carta__dostavka {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .dostavka__item {
+    max-width: 30%;
+    padding-bottom: 10px;
+    margin-right: 10px;
   }
 }
