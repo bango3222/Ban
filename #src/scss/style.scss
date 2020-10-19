@@ -744,6 +744,7 @@ body{
     }
 }
 
+<<<<<<< HEAD
 .about {
 display: flex;
 flex-direction: column;
@@ -765,4 +766,26 @@ flex-direction: column;
 
     &__text {
     }
+=======
+.breadcrumbs{
+  display: flex;
+
+  a, div{
+    font-family: Comfortaa;
+    text-decoration: none;
+    color: white;
+  }
+
+  a{
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+    &:hover{
+      border-bottom: 2px solid #fcd51e;
+    }
+  }
+
+  div{
+    margin:  0 10px;
+  }
+>>>>>>> dc87a7d4fb867d01fac2a7df83f3ca840b532a05
 }
