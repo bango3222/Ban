@@ -743,3 +743,26 @@ body{
         text-decoration: none;
     }
 }
+
+.about {
+display: flex;
+flex-direction: column;
+    &__title {
+        display: flex;
+        justify-content: center;
+        font-family: Comfortaa;  
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 35px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        margin-bottom: 75px;
+    }
+
+    &__photo {
+        
+    }
+
+    &__text {
+    }
+}
